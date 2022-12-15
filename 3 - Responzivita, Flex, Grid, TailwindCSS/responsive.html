@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Môj prvý HTML dokument</title>
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .red-title {
+            color: red;
+        }
+
+        .husky {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        @media screen and (min-width: 769px) {
+            .list {
+                display: inline-block;
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red-title">Môj prvý HTML dokument</h1>
+    <h2 class="red-title">Úvod</h2>
+    <p>
+        Toto je môj <i>prvý <b>HTML súbor</b></i>,
+        <br>
+        v ktorom skúšam <u>značky</u>.
+    </p>
+
+    <p>
+        Toto je môj <span class="italic">prvý <span class="bold">HTML súbor</span></span>,
+        <br>
+        v ktorom skúšam <span class="underline">značky</span>.
+    </p>
+
+    <img src="" alt="Obrázok sa nenašiel">
+    <hr>
+    <img class="husky" src="https://vsetko-pre-zvierata.sk/wp-content/uploads/2019/11/30-sibirsky-husky.jpg" alt="Husky">
+
+    <a href="https://google.com">Google</a>
+    <br>
+    <a href="https://google.com" target="_blank">Google na novom tabe</a>
+
+    <div class="jenda druiha tretia-stvrta">
+        <div class="list">
+            <h4>Hlavné dôvody prečo Ferrari nevie uspieť:</h4>
+            <ol>
+                <li>Ferrari</li>
+                <li>Stratégia</li>
+            </ol>
+        </div>
+
+        <div class="list">
+            <h4>Potrebujem kúpiť:</h4>
+            <ul>
+                <li>Syr</li>
+                <li>Kofolu</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

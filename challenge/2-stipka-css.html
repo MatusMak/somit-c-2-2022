@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Štipka CSS</title>
+    <style>
+        html {
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .html-highlight {
+            color: #e44d26;
+        }
+
+        .css-highlight {
+            color: #214ce5;
+        }
+
+        .lorem {
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            font-size: 24px;
+        }
+
+        .sneaky {
+            display: block;
+            color: navy;
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        @media (max-width: 425px) {
+            .sneaky {
+                display: none;
+            }
+        }
+
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img-description {
+            font-size: 20px;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        .emoji {
+            font-style: normal;
+        }
+
+        .special {
+            max-width: 500px;
+            padding: 150px 0;
+            background-color: black;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
+            cursor: wait;
+            transition: all;
+            transition-duration: 500ms;
+        }
+
+        .special:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="html-highlight">HTML</span> je cool, ale bez <span class="css-highlight">CSS</span> to nejde</h1>
+
+    <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <p class="sneaky">TENTO TEXT NA MOBILE NEUVIDÍŠ!!</p>
+
+    <img class="img-responsive" src="https://openwebsolutions.in/blog/wp-content/uploads/2018/01/banner-1.jpg" alt="">
+    <p class="img-description">Tento obrázok sa na mobile zobrazí v poriadku, nebude mimo obrazovky <span class="emoji">😉</span></p>
+
+    <div class="special">
+        Keď prejdeš nado mnou myšou, zmení sa farba (plynulo) aj kurzor (na čakanie)!
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button
+        id="main-button"
+        class="border-2 border-sky-500 rounded-md p-2 transition hover:bg-sky-300"
+        onclick="changeColor()"
+    >
+        Click me for surprise!
+    </button>
+
+<script>
+let first = 30;
+var second = 'Toto je text';
+const third = true;
+
+function add(left, right) {
+    const result = left + right;
+    return result;
+}
+
+// add(50, 100) -> 150
+// add(add(5, 10), 100) -> 115
+
+const sub = (left, right) => left - right;
+
+// sub(10, 3) -> 7
+// add(sub(10, 3), 4) -> 11
+
+console.log('Výsledok 5 + 3 je ' + add(5, 3));
+
+const fourth = [];
+const fifth = [1, 2, 3];
+
+console.log(fifth);
+fifth.push(4);
+console.log(fifth);
+
+fifth.forEach((item) => console.log('Číslo z poľa', item));
+
+const even = fifth.filter(item => item % 2 === 0);
+console.log(even, fifth);
+
+const student = {
+    inSchool: false,
+
+    name: 'Jožo',
+    surname: 'Mrkvička',
+    age: 16,
+
+    address: {
+        street: 'Poštová 9',
+        city: 'Košice',
+        country: 'Slovensko',
+    },
+
+    get fullAddress() {
+        return this.address.street + ', ' + this.address.city + ', ' + this.address.country;
+    },
+
+    attend() {
+        this.inSchool = true;
+    },
+
+    leave() {
+        this.inSchool = false;
+    },
+};
+
+console.log(student);
+console.log(student.age);
+console.log(student.address.country);
+console.log(student.fullAddress);
+
+const changeColor = () => {
+    const button = document.getElementById('main-button');
+
+    button.classList.toggle('border-sky-500');
+    button.classList.toggle('hover:bg-sky-300');
+    
+    button.classList.toggle('border-red-500');
+    button.classList.toggle('hover:bg-red-300');
+};
+</script>
+</body>
+</html>

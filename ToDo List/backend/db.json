@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 141323,
+      "name": "Ahoj",
+      "checked": false
+    },
+    {
+      "id": 113049,
+      "name": "Jeden",
+      "checked": true
+    },
+    {
+      "id": 59828,
+      "name": "Dva",
+      "checked": false
+    }
+  ]
+}
